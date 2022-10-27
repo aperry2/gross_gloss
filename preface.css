@@ -14,6 +14,19 @@ body {
   line-height: 1.6;
 }
 
+#parent {
+  display: flex;
+  text-align: center;
+}
+
+#a {
+  width: 50%;
+}
+
+#b {
+  flex: 1;
+}
+
 /* Style the header */
 .header {
   grid-area: header;
