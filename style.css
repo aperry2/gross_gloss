@@ -41,7 +41,7 @@ body {
 .left,
 .middle,
 .right {
-  padding: 10px;
+  padding: auto;
 
   /* code for visibility */
   /*
@@ -52,6 +52,7 @@ body {
 }
 
 .middle {
+  padding-top: 5%;
   border-width: 10px;
   border-color: #ee7;
   border-style: ridge;
@@ -92,7 +93,7 @@ td, th {
 #imgFrame img {
   display: none;
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 
 /* Style the left column */
@@ -104,6 +105,7 @@ td, th {
 /* Style the middle column */
 .middle {
   grid-area: middle;
+  padding-bottom: 40%;
 }
 
 img {
@@ -117,7 +119,22 @@ img {
 
 /* Style the footer */
 .footer {
+  max-width: 1200px;
+  border-color: #ee7;
+  border-top-style: ridge;
+  border-left-style: ridge;
+  border-right-style: ridge;
+  border-width: 20px;
   grid-area: footer;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10%;
+
+  margin-left: auto;
+  margin-right: auto;
   background-color: #00a;
   padding: 3%;
   text-align: center;
