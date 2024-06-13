@@ -61,9 +61,10 @@ body {
 }
 
 table {
-  width: 15em;
-  height: 15em;
-  font-size: 15px;
+  table-layout: fixed;
+  width: 600px;
+  height: 600px;
+  font-size: 2em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -75,8 +76,8 @@ td, th {
   text-align: center;
   border-color: #ee7;
   border-style: ridge;
-  width: 3em;
-  height: 3em;
+  width: 100px;
+  height: 100px;
 }
 
 #imgFrame {
