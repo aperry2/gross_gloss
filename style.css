@@ -116,7 +116,7 @@ img {
 /* Style the footer */
 .footer {
   grid-area: footer;
-  background-color: #f1f1f1;
+  background-color: #00a;
   padding: 3%;
   text-align: center;
 }
@@ -124,6 +124,10 @@ img {
 a {
   color: #c4c;
   text-decoration: none;
+}
+
+p {
+  text-align: left;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
