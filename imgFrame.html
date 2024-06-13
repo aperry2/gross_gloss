@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <div class="header" style="background-color:#00a;">
+      <h2>THE GROSS GLOSS</h2>
+    </div>
+
+    <div class="left" style="background-color:#00a;">
+
+    </div>
+
+    <div class="middle" id="imgFrame" style="background-color:#000;">
+      <div class="image-container">
+        <img id="miasma" src="glosses/aries/miasma.png">
+        <img id="cloud" src="glosses/aries/cloud.png">
+        <img id="desired" src="glosses/aries/desired.png">
+        <img id="me" src="glosses/aries/me.png">
+        <img id="projected" src="glosses/aries/projected.png">
+        <img id="them" src="glosses/aries/them.png">
+
+        <img id="communicants" src="glosses/taurus/communicants.png">
+        <img id="container" src="glosses/taurus/container.png">
+        <img id="depth" src="glosses/taurus/depth.png">
+        <img id="fitting" src="glosses/taurus/fitting.png">
+        <img id="humana" src="glosses/taurus/humana.png">
+        <img id="open" src="glosses/taurus/open.png">
+        <img id="organs" src="glosses/taurus/organs.png">
+        <img id="percepts" src="glosses/taurus/percepts.png">
+        <img id="scrying" src="glosses/taurus/scrying.png">
+        <img id="vapors" src="glosses/taurus/vapors.png">
+        <img id="windows" src="glosses/taurus/windows.png">
+
+        <img id="contemplation" src="glosses/gemini/contemplation.png">
+        <img id="furnaces" src="glosses/gemini/furnaces.png">
+        <img id="gramineous" src="glosses/gemini/gramineous.png">
+        <img id="objects" src="glosses/gemini/objects.png">
+        <img id="opalescence" src="glosses/gemini/opalescence.png">
+
+        
+        
+      </div>
+    </div>
+
+    <div class="right" style="background-color:#00a;">
+
+    </div>
+
+    <div class="footer" style="background-color:#00a;">
+      <a href="javascript:history.back()">Back</a>
+    </div>
+  </div>
+
+  <script>
+    // Function to get URL parameters
+    function getParameterByName(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    // Get the image parameter from the URL
+    const imageParam = getParameterByName('image');
+
+    // Show the corresponding image based on the parameter
+    if (imageParam) {
+        const imageElement = document.getElementById(imageParam);
+        if (imageElement) {
+            imageElement.style.display = 'block';
+        }
+    }
+</script>
+</body>
+
+</html>
