@@ -20,7 +20,7 @@ body {
   background-color: #f1f1f1;
   padding: 5px;
   text-align: center;
-  font-size: 35px;
+  font-size: 55px;
   /*letter-spacing: 1.5em;*/
 }
 
@@ -55,6 +55,8 @@ body {
   padding-top: 5%;
   padding-right: 5%;
   padding-left: 5%;
+  font-size: 35px;
+  line-height: 1.6;
   border-width: 10px;
   border-color: #ee7;
   border-style: ridge;
@@ -130,6 +132,8 @@ img {
   border-width: 20px;
   grid-area: footer;
 
+  font-size: 30px;
+
   position: fixed;
   bottom: 0;
   left: 0;
@@ -145,7 +149,7 @@ img {
 
 a {
   color: #c4c;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 p {
@@ -177,8 +181,8 @@ hr {
   float: left;
   position: relative;
   top: -0.25em;
-  margin-bottom: -0.2em;
+  margin-bottom: -0.6em;
   margin-left: -6px;
   margin-right: 2px;
-  font-size: 5em;
+  font-size: 4em;
 }
