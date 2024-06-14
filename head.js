@@ -11,9 +11,9 @@ function preload() {
 }
 
 function setup() {
-  cvs = createCanvas(windowWidth/2, windowHeight/2, WEBGL);
+  cvs = createCanvas(420, 680, WEBGL);
   cvs.parent("sketch-container");
-  buff = createGraphics(windowWidth/2, windowHeight/2);
+  buff = createGraphics(420, 680);
 
 
   c[0] = color("#9bb0ff");

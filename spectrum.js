@@ -15,9 +15,9 @@ let y;
 let iter = 0;
 
 function setup() {
-  cvs = createCanvas(windowWidth/2, windowHeight/2);
+  cvs = createCanvas(420, 680);
   cvs.parent("sketch-container");
-  buff = createGraphics(windowWidth/2, windowHeight/2);
+  buff = createGraphics(420, 680);
 
 
   w = width + xspacing;

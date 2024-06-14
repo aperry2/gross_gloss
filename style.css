@@ -107,26 +107,24 @@ td, th {
 /* Style the left column */
 .left {
   grid-area: left;
-  width: 15vw;
+  width: 200%;
 }
 
 /* Style the right column */
 .right {
   grid-area: right;
-  width: 15vw;
+  transform: translate(-50%, 0%);
+  width: 200%;
 }
 
 /* Style the middle column */
 .middle {
   grid-area: middle;
+  z-index: 1;
 }
 
 img {
   width: 85%;
-}
-
-.sketch-container {
-  margin: auto;
 }
 
 /* Style the footer */
@@ -152,6 +150,8 @@ img {
   background-color: #00a;
   padding: 3%;
   text-align: center;
+
+  z-index: 2;
 }
 
 a {

@@ -12,15 +12,13 @@ let x = 80;
 
 function preload() {
   column = loadModel('column.obj');
-  font = loadFont("C64.ttf");
 }
 
 function setup() {
-  cvs = createCanvas(windowWidth/2, windowHeight/2, WEBGL);
+  cvs = createCanvas(420, 680, WEBGL);
   cvs.parent("sketch-container");
-  buff = createGraphics(windowWidth/2, windowHeight/2);
+  buff = createGraphics(420, 680);
 
-  textFont(font);
 
   c[0] = color("#9bb0ff");
   c[1] = color("#aabfff");
@@ -45,13 +43,13 @@ function setup() {
   for (let i = 0; i < 1000; i++) {
     buff.fill(random(c));
     buff.noStroke();
-    buff.circle(random(width), random(height), random(1, 3));
+    buff.circle(random(width), random(height), random(1, 2));
   }
 
   for (let i = 0; i < 3; i++) {
     buff.fill(random(c));
     buff.noStroke();
-    buff.circle(random(width), random(height), random(4, 5));
+    buff.circle(random(width), random(height), random(4, 3));
   }
 }
 
@@ -60,7 +58,7 @@ function draw() {
 
   push();
     texture(buff);
-    let factor = 5;
+    let factor = 6;
     translate(0, 0, -(factor * 90));
     scale(factor);
     plane(width, height);
@@ -73,15 +71,6 @@ function draw() {
   }
 
   let colorIndex = int(map(x, 0, 360, 0, c.length));
-  console.log(colorIndex);
-
-  push();
-    fill(c[colorIndex]);
-    textAlign(RIGHT, CENTER);
-    textSize(20);
-    text(int(x) + "deg", 60, 150);
-    text("#" + hex([red(c[colorIndex], green(c[colorIndex]), blue(c[colorIndex]),)], 6), 60, 180);
-  pop();
 
   let locX = cos(radians(x)) * 100;
   let locZ = -90 + (sin(radians(x)) * 100);
@@ -93,21 +82,43 @@ function draw() {
 }
 
 function drawColumns() {
-  for (let i = 0; i < 7; i++) {
+  let c64cA = [];
+  let c64cB = [];
+
+  c64cA[0] = color("#000000");
+  c64cA[1] = color("#FFFFFF");
+  c64cA[2] = color("#880000");
+  c64cA[3] = color("#AAFFEE");
+  c64cA[4] = color("#CC44CC");
+  c64cA[5] = color("#00CC55");
+  c64cA[6] = color("#0000AA");
+  c64cA[7] = color("#EEEE77");
+
+  c64cB[0] = color("#DD8855");
+  c64cB[1] = color("#664400");
+  c64cB[2] = color("#FF7777");
+  c64cB[3] = color("#333333");
+  c64cB[4] = color("#777777");
+  c64cB[5] = color("#AAFF66");
+  c64cB[6] = color("#0088FF");
+  c64cB[7] = color("#BBBBBB");
+
+  for (let i = 0; i < 8; i++) {
     let zoff = 90 - (i * 90);
     let xoff = 160;
+
     push();
     translate(xoff, -130, zoff);
-    scale(19);
-    fill(c[i]);
-    model(column);
+      scale(19);
+      fill(c64cA[i]);
+      model(column);
     pop();
 
     push();
-    translate(-xoff, -130, zoff);
-    scale(19);
-    fill(c[i]);
-    model(column);
+      translate(-xoff, -130, zoff);
+      scale(19);
+      fill(c64cB[i]);
+      model(column);
     pop();
   }
 }
