@@ -56,6 +56,7 @@ body {
   border-width: 10px;
   border-color: #ee7;
   border-style: ridge;
+  padding-bottom: 30%;
 }
 
 #toc {
