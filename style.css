@@ -10,6 +10,7 @@
 body {
   font-family: c64;
   padding: 10px;
+  padding-top: 10px;
   color: #08f;
   background-color: #08f;
 }
@@ -42,8 +43,7 @@ body {
 .middle,
 .right {
   padding: auto;
-  padding-bottom: 40%;
-
+  
   /* code for visibility */
   
   /* border-width: 1px;
@@ -58,10 +58,13 @@ body {
   padding-left: 2%;
   font-size: 1.3em;
   line-height: 1.6;
+  margin: auto;
+  max-width: 800px;
   border-width: 10px;
   border-color: #ee7;
   border-style: ridge;
   padding-bottom: 30%;
+  background-color: #00a;
 }
 
 #toc {
@@ -104,7 +107,13 @@ td, th {
 /* Style the left column */
 .left {
   grid-area: left;
-  text-align: right;
+  width: 15vw;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  width: 15vw;
 }
 
 /* Style the middle column */
@@ -116,9 +125,8 @@ img {
   width: 85%;
 }
 
-/* Style the right column */
-.right {
-  grid-area: right;
+.sketch-container {
+  margin: auto;
 }
 
 /* Style the footer */
