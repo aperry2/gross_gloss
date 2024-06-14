@@ -60,11 +60,19 @@ function draw() {
     texture(buff);
     let factor = 6;
     translate(0, 0, -(factor * 90));
-    scale(factor);
+    scale(2);
     plane(width, height);
   pop();
 
-  x = x + 0.5;
+  push();
+    fill("#BBBBBB");
+    translate(0, 120, -200);
+    rotateX(radians(90));
+    scale(factor);
+    plane(40, 200);
+  pop();
+
+  x = x + 5;
 
   if (x >= 360) {
     x = 0;
@@ -85,7 +93,7 @@ function drawColumns() {
   let c64cA = [];
   let c64cB = [];
 
-  c64cA[0] = color("#000000");
+  c64cA[0] = color("#1A1A1A");
   c64cA[1] = color("#FFFFFF");
   c64cA[2] = color("#880000");
   c64cA[3] = color("#AAFFEE");
