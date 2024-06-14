@@ -9,8 +9,8 @@
 
 body {
   font-family: c64;
-  color: #08f;
   padding: 10px;
+  color: #08f;
   background-color: #08f;
 }
 
@@ -42,6 +42,7 @@ body {
 .middle,
 .right {
   padding: auto;
+  padding-bottom: 40%;
 
   /* code for visibility */
   
@@ -109,7 +110,6 @@ td, th {
 /* Style the middle column */
 .middle {
   grid-area: middle;
-  padding-bottom: 40%;
 }
 
 img {
