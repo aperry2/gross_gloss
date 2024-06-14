@@ -28,7 +28,7 @@ body {
 .grid-container {
   display: grid;
   text-align: center;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: auto;
   grid-template-areas:
@@ -53,6 +53,8 @@ body {
 
 .middle {
   padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
   border-width: 10px;
   border-color: #ee7;
   border-style: ridge;
